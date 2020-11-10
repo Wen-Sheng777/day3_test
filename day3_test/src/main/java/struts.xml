@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+  
+<struts>  
+	<package name="javaWEB3" extends="struts-default">  
+  		
+		<action name="add" class="Conroller.add">  
+			<result name="success" type="redirect">confirm.jsp</result>
+		</action> 
+		
+		<action name="ok" class="Conroller.ok">  
+			<result name="success" type="redirect">ok.jsp</result>
+		</action> 
+		
+		<action name="update" class="Conroller.update">  
+			<result name="success" >update.jsp</result>
+		</action>
+  		
+  		<action name="delete" class="Conroller.delete">  
+			<result name="success" >delete.jsp</result>
+		</action>
+		
+	</package>  
+</struts>   
